@@ -6,11 +6,6 @@ import { RiFireLine } from "react-icons/ri";
 import { CiMobile2 } from "react-icons/ci";
 import { CiLocationOn } from "react-icons/ci";
 
-
-
-
-
-
 const NavCat = () => {
     return(
         <>
