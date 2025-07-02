@@ -1,6 +1,23 @@
-const ServisecItems = () => {
+import { useEffect } from "react";
+
+
+const ServisecItems = ({ data }) => {
+
+
+
+
+    
+
   return (
     <div className="servisec-items flex gap-16 text-center justify-center py-4">
+      {/* <ul>
+        {data.map((item, index) => {
+          return(
+            <li key={index}>{item.name}</li>
+          )
+        })}
+      </ul> */}
+
       <div className="basis-[70px]">
         <img
           className="w-[70px] block mx-auto mb-3"

@@ -3,30 +3,43 @@ import NavLogo from './components/Navbar/NavLogo';
 import NavCat from './components/Navbar/NavCat';
 import SliderHeader from './components/SliderHeader/SliderHeader';
 import ServisecItems from './components/ServisecItems/ServisecItems';
+import CarouselOff from './components/CarouselOff/CarouselOff';
+import SliderMain from './components/SliderMain/SliderMain';
+
 
 function App() {
   
-// const [posts, setPosts] = useState([]);
-// const [loading, setLoading] = useState(false);
-// const [error, setError] = useState(false);
+const [apiData, setApidata] = useState([]);
+const [loading, setLoading] = useState(false);
+const [error, setError] = useState(false);
 
-// const fetchPosts = async () => {
-//   let data = await fetch("https://api.digikala.com/v2");
-//   let res = await data.json();
-//   console.log(res);
+
+
+const fetchPosts = async () => {
+  let res = await fetch("./db.json");
+  let data = await res.json();
+    setApidata(data.data.widgets);
+    
+  // console.log(apiData);
    
-// }
+}
 
-// useEffect(() => {
-//     fetchPosts();
-// })
+
+
+useEffect(() => {
+    fetchPosts();
+    
+})
 
   return (
     <>
      <NavLogo />
      <NavCat />
      <SliderHeader />
-     <ServisecItems />
+     <SliderMain />
+     <ServisecItems data={apiData}/>
+     <CarouselOff />
+     
     </>
   )
 }
