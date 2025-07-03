@@ -17,7 +17,7 @@ const settings = {
 
 
     return(
-        <div className="slider-main">
+        <div className="slider-main py-4">
             <Slider {...settings}>
                 <div><img src="../../src/assets/slider1.webp" alt="" /></div>
                 <div><img src="../../src/assets/slider2.webp" alt="" /></div>
