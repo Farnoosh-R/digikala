@@ -1,7 +1,6 @@
-.slick-slide {
-  padding: 0 2px;
-}
-
-.slick-list {
-  margin: 0 -8px;
+.slick-prev,
+.slick-next {
+  z-index: 10 !important;
+  top: 50% !important;
+  transform: translateY(-50%);
 }

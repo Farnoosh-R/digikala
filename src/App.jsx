@@ -5,6 +5,7 @@ import SliderHeader from './components/SliderHeader/SliderHeader';
 import ServisecItems from './components/ServisecItems/ServisecItems';
 import CarouselOff from './components/CarouselOff/CarouselOff';
 import SliderMain from './components/SliderMain/SliderMain';
+import AdsBoxSmall from './components/AdsBoxSmall/AdsBoxSmall';
 
 
 function App() {
@@ -39,7 +40,7 @@ useEffect(() => {
      <SliderMain />
      <ServisecItems data={apiData}/>
      <CarouselOff />
-     
+     <AdsBoxSmall />
     </>
   )
 }
