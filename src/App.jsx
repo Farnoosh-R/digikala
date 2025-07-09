@@ -6,6 +6,7 @@ import ServisecItems from './components/ServisecItems/ServisecItems';
 import CarouselOff from './components/CarouselOff/CarouselOff';
 import SliderMain from './components/SliderMain/SliderMain';
 import AdsBoxSmall from './components/AdsBoxSmall/AdsBoxSmall';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -41,6 +42,7 @@ useEffect(() => {
      <ServisecItems data={apiData}/>
      <CarouselOff />
      <AdsBoxSmall />
+     <Footer />
     </>
   )
 }
